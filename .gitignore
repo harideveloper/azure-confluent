@@ -1,0 +1,198 @@
+# .gitignore (root level)
+
+# ==============================================================================
+# Python (app directory)
+# ==============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+.pytest_cache/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# ==============================================================================
+# Terraform (all platform directories)
+# ==============================================================================
+# Local .terraform directories
+**/.terraform/*
+.terraform/
+.terraform.lock.hcl
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files, which likely contain sensitive data
+*.tfvars
+*.tfvars.json
+
+# Override files as they are usually used to override resources locally
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform CLI configuration files
+.terraformrc
+terraform.rc
+
+# Terraform plan files
+*.tfplan
+
+# ==============================================================================
+# Secrets & Environment Variables
+# ==============================================================================
+.env
+.env.local
+.env.*.local
+*.env
+.envrc
+
+# Secrets files
+secrets/
+*.secret
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+
+# Service account keys
+*-sa-key.json
+service-account*.json
+credentials.json
+
+# Confluent Cloud credentials
+confluent.properties
+kafka.properties
+
+# MongoDB Atlas credentials
+atlas-credentials.json
+
+# ==============================================================================
+# IDE & Editor
+# ==============================================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ==============================================================================
+# OS
+# ==============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.directory
+
+# ==============================================================================
+# Logs & Temporary Files
+# ==============================================================================
+*.log
+logs/
+*.tmp
+*.temp
+tmp/
+temp/
+
+# ==============================================================================
+# Documentation & Build Artifacts
+# ==============================================================================
+# Generated documentation
+docs/_build/
+site/
+
+# ==============================================================================
+# Project Specific
+# ==============================================================================
+# Local development files
+local/
+.local/
+scratch/
+
+# Backup files
+*.bak
+*.backup
+
+# Data files (if you don't want to commit test data)
+*.csv
+*.json.bak
+data/
+
+# Output files
+output/
+outputs/
